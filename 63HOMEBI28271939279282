@@ -1,0 +1,181 @@
+local DarkraiX = loadstring(game:HttpGet("https://github.com/Fe773Vdoa/Hub/raw/main/Hub", true))()
+
+--- Window
+
+local Library = DarkraiX:Window("Harlen Hub","","",Enum.KeyCode.RightControl);
+
+--- Botão
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Fe773Vdoa/ButtonIJheushauuaya7Ha7auuahd-s/main/ButtonIahhwuaha7wg7wyee8"))()
+
+--- Tabs
+
+Tab1 = Library:Tab("🚪┃Main")
+Tab4 = Library:Tab("🎯┃Misc")
+Tab5 = Library:Tab("💳┃Credits")
+
+--- Section
+
+Tab1:Label("Brazilian Script By Harlen_Br0")
+
+--- Botões
+
+Tab1:Line()
+
+Tab1:Seperator("📍 = Teleport = 📍")
+
+Tab1:Button("🚚 • 1st Truck",function()
+    local plr = game.Players.LocalPlayer
+local plrRP = plr.Character:FindFirstChild("HumanoidRootPart")
+if plrRP then
+  TweenSpeed = 200
+  TweenPos = CFrame.new(85.36697387695312, 6.653404712677002, 108.80854034423828)
+  -- ///////////////////////////// --
+  local distance = (plrRP.Position - TweenPos.p).Magnitude
+  local duration = distance / TweenSpeed
+  local tween = game:GetService("TweenService"):Create(plrRP, TweenInfo.new(duration), {CFrame = TweenPos})
+  tween:Play()
+  tween.Completed:Wait()
+end
+end)
+
+Tab1:Button("🚚 • 2nd Truck",function()
+    local plr = game.Players.LocalPlayer
+local plrRP = plr.Character:FindFirstChild("HumanoidRootPart")
+if plrRP then
+  TweenSpeed = 200
+  TweenPos = CFrame.new(86.90481567382812, 7.110655307769775, 144.49615478515625)
+  -- ///////////////////////////// --
+  local distance = (plrRP.Position - TweenPos.p).Magnitude
+  local duration = distance / TweenSpeed
+  local tween = game:GetService("TweenService"):Create(plrRP, TweenInfo.new(duration), {CFrame = TweenPos})
+  tween:Play()
+  tween.Completed:Wait()
+end
+end)
+
+Tab1:Seperator("💵 = Free Gamepass Roles = 💵")
+
+Tab1:Button("👨‍💻 • The Hacker <FREE>",function()
+    game:GetService("ReplicatedStorage").RemoteEvents.OutsideRole:FireServer("Phone", true, false)
+end)
+
+Tab1:Button("🤓 • The Nerd <FREE>",function()
+    game:GetService("ReplicatedStorage").RemoteEvents.OutsideRole:FireServer("Book", true, false)
+end)
+
+Tab1:Seperator("👩 = Adult Roles = 🧑")
+
+Tab1:Button("🛡️ • The Protector",function()
+    local args = {
+    [1] = "Bat",
+    [2] = false,
+    [3] = false
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("MakeRole"):FireServer(unpack(args))
+end)
+
+Tab1:Button("🩺 • The Medic",function()
+    local args = {
+    [1] = "MedKit",
+    [2] = false,
+    [3] = false
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("MakeRole"):FireServer(unpack(args))
+end)
+
+Tab1:Seperator("👦 = Kid Roles = 👧")
+
+Tab1:Button("🍭 • The Hyper",function()
+    local args = {
+    [1] = "Lollipop",
+    [2] = true,
+    [3] = false
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("MakeRole"):FireServer(unpack(args))
+end)
+
+Tab1:Button("🍶 • The Sporty",function()
+    local args = {
+    [1] = "Bottle",
+    [2] = true,
+    [3] = false
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("MakeRole"):FireServer(unpack(args))
+end)
+
+Tab1:Line()
+
+Tab4:Line()
+
+Tab4:Seperator("🎯 = Misc = 🎯")
+
+Tab4:Label("The Normal Speed This 16")
+
+Tab4:Slider("🏃 • Speed",1,150,16,function(value)
+        local player = game.Players.LocalPlayer
+local humanoid = player.Character.Humanoid
+
+humanoid.WalkSpeed = value
+    end)
+
+Tab4:Button("👻 • Noclip",function()
+    local function onPartTouched(part)
+  
+  local humanoid = part.Parent:FindFirstChild("Humanoid")
+  if humanoid ~= nil then
+    
+    part.CanCollide = false
+  end
+end
+
+for _, part in ipairs(workspace:GetDescendants()) do
+  if part:IsA("BasePart") then
+    part.Touched:Connect(onPartTouched)
+  end
+end
+end)
+
+Tab4:Button("🦘 • Infinite Jumps",function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Fe773Vdoa/SuHusYfY-eG6Tay6GWYAU38LuckyBlocky/main/InfiniteJump"))()
+end)
+
+Tab4:Button("💡 • Fullbright",function()
+    local function setBrightness()
+    
+    local lighting = game:GetService("Lighting")
+    
+    
+    lighting.Ambient = Color3.new(1, 1, 1)
+    
+    
+    lighting.OutdoorAmbient = Color3.new(1, 1, 1)
+end
+
+setBrightness()
+end)
+
+Tab4:Button("🚀 • Anti Lag/Boost Fps",function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Fe773Vdoa/BreakInHistory2IhsgeuuGa72y7syaga7/main/AntiLag"))()
+end)
+
+Tab4:Line()
+
+Tab5:Line()
+
+Tab5:Seperator("💳 = Credits = 💳")
+
+Tab5:Label("Credits To Harlen")
+
+Tab5:Label("Credits To REDz")
+
+Tab5:Label("Credits To Gb")
+
+Tab5:Line()
+
+--[[
+]]
