@@ -887,6 +887,14 @@ Tab4:Toggle("👴 • Auto Claim Uncle Pete Quests",false,function(Value)
 			end
     end)
 
+Tab4:Button("🗑️ • Remove All Items Of Inventory",function()
+    local jogador = game.Players.LocalPlayer
+
+for _, item in pairs(jogador.Backpack:GetChildren()) do
+    item:Destroy()
+end
+end)
+
 Tab4:Button("🍎 • Get Badge Golden Apple",function()
     GetGAppleBadge()
 end)
